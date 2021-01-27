@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta name="description" content="First mandatory assignment in Utvikling av Interaktive Nettsteder at Hiof"/>
+        <title>Oblig 1</title>
+        
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    
+    </head>
+    
+    <body>
+        
+        <header>
+        
+            <!--Skal bare være en lysegråstripe i CSS-->
+            
+        </header>
+        
+        <nav>
+            <!--gir de to nav-elementene hver sin id for å gjoøre det enklere å tilegge properties i CSS-->
+            
+            <ul style="list-style-type: none;">
+            <nav id="navcontainer1"> 
+            <li><a href="#" style="font-family: roboto"><h1><b>HIOF</b></h1></a></li>
+            </nav>   
+            
+            <nav id="navcontainer2">
+            <li><a href="#"><h4>User user</h4></a></li>
+            </nav>
+            </ul>
+                
+        </nav>
+        
+            
+        
+    <main>
+        <section id="formcontainer">
+        <!--Tekstfelt/skjema-område-->
+        <div class="htmlforms">
+            <form>
+                <label for="title">Title</label>
+                <br>
+                <input type="text" id="name" name="title" value="" placeholder="Add a suitable title">
+            
+            </form>
+    
+        </div>
+        
+        <div class="htmlforms">
+            <form>
+                <label for="content">Content</label>
+                <br>
+                <textarea id="contenttext" name="content" input type="text" value="" placeholder="Insert text here" rows="5" cols="70">
+                </textarea>
+                <br>
+                <input type="submit" value="Add" style="background-color: #7DF5F1">
+                
+            </form>
+            
+        </div>
+            
+            </section>
+        
+        <!--Lage article'ene som egen section med flex-wrap rundt og grid inni?-->
+        
+    <h2><b>My Todos</b></h2>
+        
+    <section id="articlecontainer">
+        
+        
+       <article id="Todo1">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+        <article id="Todo2">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+        <article id="Todo3">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+        <article id="Todo4">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+        <article id="Todo5">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+        <article id="Todo6">
+            <h3>Todotitle</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <button type="button" onclick="alert('Well done!')" style="background-color: #7DF5F1">Complete</button>
+        </article> 
+        
+    </section>
+        
+    </main>
+    
+    
+    </body>
+
+</html>

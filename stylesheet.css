@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+   display: grid;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:  
+        "header header header"
+        "nav nav nav"
+        "main main main"; 
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+    
+    /* Prøve med flex */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+    
+    font-family: "adobe-clean", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: lightgray;
+    display: inline-block;
+    width: 100%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+ul {
+    display: inherit;
+}
+
+/* HIOF-hjemmeknappen
+#navcontainer1 {
+    margin-left: 20%;
+    display: inherit;
+}
+
+/* User user-login 
+#navcontainer2 {
+    margin-left: 80%;
+    display: inherit  */
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    /* justify-self: center;
+    justify-content: center;
+    align-content: center; */
+    
+} 
+
+#formcontainer {
+    grid-area: main;
+    display: inherit;
+    padding: 0.6em;
+    padding-bottom: 10%;
+    margin: 0.6em;
+    margin-left: 20%;
+    
+    justify-content: center;
+    align-content: center;
+} 
+
+.htmlforms {
+    grid-area: main;
+    display: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+h2 {
+    text-align: center;
+}
+
+#articlecontainer {
+    /*grid-area: main; */
+    display: inline-grid;
+    grid-template-columns: 10em 10em 10em;
+    grid-gap: 2em;
+    
+    padding: 10%;
+    
+    flex-wrap: wrap;
+    margin: 0.6em;
+    margin-left: 30%;
+    
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#Todo1 {
+   padding: inherit;
+    border: solid black;
+} 
+
+#Todo2 {
+    padding: inherit;
+    border: solid black;
+}
+
+#Todo3 {
+    padding: inherit;
+    border: solid black;
+}
+
+#Todo4 {
+    padding: inherit;
+    border: solid black;
+}
+
+#Todo5 {
+    padding: inherit;
+    border: solid black;
+}
+
+#Todo6 {
+    padding: inherit;
+    border: solid black;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+}
